@@ -44,7 +44,8 @@
             url: 'student/uploads/image',
             success: function (results) {
                 if (results.error === false) {
-                    $('#image_show').html('<a href="' + results.url + '" target="_blank" ><img src="' + results.url + '" width="200px" alt="' + results.name + '"></a>')
+                    $('.remove').remove();
+                    $('#image_show').html('<a href="' + results.url + '" target="_blank" ><img src="' + results.url + '" height="200px" alt="' + results.name + '"></a>')
                 $('#thumb').val(results.url);
                 } else {
                     alert('Upload file không thành công');
