@@ -52,6 +52,19 @@
                 }
             }
         });
+        $('.selectpicker').selectpicker({
+            style: 'btn-default'
+        });
+
+        $('.selectpicker').on('change', function () {
+            $('#student_code').hide();
+            $('#class_code').hide();
+            $('#subject').hide();
+            $.each($(this).find('option:selected'), function (index, item) {
+                var selected = $(item).data('tokens');
+                    $("#" + selected).show();
+            });
+        });
 });
 })(jQuery);
 
