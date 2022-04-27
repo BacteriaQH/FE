@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid pt-4 px-4">
+    <div class="bg-light rounded h-50 p-4">
+      <h6>Tìm kiếm theo:</h6>
+      <div class="row g-4">
+        <div class="col-sm-6">
+          <div class="form-group mb-3">
+            <select class="form-select" name="select" id="select">
+              <option value="0">Chọn</option>
+              <option value="student_code">Mã Sinh Viên</option>
+              <option value="class_code">Mã Lớp</option>
+              <option value="subject">Học Phần</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group mb-3 input-show" id="student_code">
+            <div class="form-group mb-3">
+              <input type="text" class="form-control" name="student_code" autocomplete="off"
+                placeholder="Mã Sinh Viên" />
+            </div>
+          </div>
+          <div class="form-group mb-3 input-show" id="class_code">
+            <select class="form-select">
+              <option value="0">Lớp</option>
+              <option value="AT16A">AT16A</option>
+              <option value="AT16B">AT16B</option>
+              <option value="AT16C">AT16C</option>
+              <option value="AT16D">AT16D</option>
+              <option value="AT16E">AT16E</option>
+            </select>
+          </div>
+          <div class="form-group mb-3 input-show" id="subject">
+            <select class="form-select">
+              <option value="0">Học phần</option>
+              <option value="A">Kỹ thuật lập trình</option>
+              <option value="B">Cấu trúc dữ liệu và giải thuật</option>
+              <option value="C">Lập trình hướng đối tượng</option>
+              <option value="D">Lập trình căn bản</option>
+              <option value="E">Tư tưởng Hồ Chí Minh</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+
+  </script>
+  <!-- JavaScript Libraries -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
