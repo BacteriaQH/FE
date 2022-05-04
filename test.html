@@ -20,47 +20,51 @@
 <body>
   <div class="container-fluid pt-4 px-4">
     <div class="bg-light rounded h-50 p-4">
-      <h6>Tìm kiếm theo:</h6>
-      <div class="row g-4">
-        <div class="col-sm-6">
-          <div class="form-group mb-3">
-            <select class="form-select" name="select" id="select">
-              <option value="0">Chọn</option>
-              <option value="student_code">Mã Sinh Viên</option>
-              <option value="class_code">Mã Lớp</option>
-              <option value="subject">Học Phần</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="form-group mb-3 input-show" id="student_code">
-            <div class="form-group mb-3">
-              <input type="text" class="form-control" name="student_code" autocomplete="off"
-                placeholder="Mã Sinh Viên" />
-            </div>
-          </div>
-          <div class="form-group mb-3 input-show" id="class_code">
-            <select class="form-select">
-              <option value="0">Lớp</option>
-              <option value="AT16A">AT16A</option>
-              <option value="AT16B">AT16B</option>
-              <option value="AT16C">AT16C</option>
-              <option value="AT16D">AT16D</option>
-              <option value="AT16E">AT16E</option>
-            </select>
-          </div>
-          <div class="form-group mb-3 input-show" id="subject">
-            <select class="form-select">
-              <option value="0">Học phần</option>
-              <option value="A">Kỹ thuật lập trình</option>
-              <option value="B">Cấu trúc dữ liệu và giải thuật</option>
-              <option value="C">Lập trình hướng đối tượng</option>
-              <option value="D">Lập trình căn bản</option>
-              <option value="E">Tư tưởng Hồ Chí Minh</option>
-            </select>
-          </div>
-        </div>
-      </div>
+      <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
+        <table class="table table-bordered text-center">
+          <col>
+          <colgroup span="2"></colgroup>
+          <colgroup span="2"></colgroup>
+          <tr>
+            <td rowspan="2">STT</td>
+            <td rowspan="2">Mã học viên</td>
+            <th colspan="2" scope="colgroup">Họ và tên</th>
+            <td rowspan="2">Lớp</td>
+            <th colspan="2" scope="colgroup">Điểm thành phần</th>
+            <th colspan="2" scope="colgroup">Điểm thi</th>
+          </tr>
+          <tr>
+            <th scope="col">Họ đệm</th>
+            <th scope="col">Tên</th>
+            <th scope="col">TP1</th>
+            <th scope="col">TP2</th>
+            <th scope="col">Lần 1</th>
+            <th scope="col">Lần 2</th>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>AT160541</td>
+            <td>Văn Hoàng</td>
+            <td>Phúc</td>
+            <td>AT16E</td>
+            <td>9</td>
+            <td>9</td>
+            <td>3</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>AT160541</td>
+            <td>Văn Hoàng</td>
+            <td>Phúc</td>
+            <td>AT16E</td>
+            <td>9</td>
+            <td>9</td>
+            <td>3</td>
+            <td>7</td>
+          </tr>
+        </table>
+    </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
