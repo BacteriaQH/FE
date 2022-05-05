@@ -41,87 +41,109 @@
 
     <!-- Sidebar Start -->
     <div class="sidebar pe-4 pb-3">
-      <nav class="navbar bg-light navbar-light">
-        <a href="index.html" class="navbar-brand mx-3 mb-3">
-          <h3 class="text-primary navbar-brand-name">Quản Lý Sinh Viên</h3>
-        </a>
-        <div class="d-flex align-items-center ms-4 mb-4">
-          <div class="position-relative">
-            <img class="rounded-circle" src="img/male.png" alt="" style="width: 40px; height: 40px" />
-            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
-            </div>
-          </div>
-          <div class="ms-3">
-            <h6 class="mb-0">Văn Hoàng Phúc</h6>
-            <span>Admin</span>
-          </div>
-        </div>
-        <div class="navbar-nav w-100">
-          <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Trang
-            Chủ</a>
-          <div class="nav-item dropdown  ">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-              <i class="fas fa-user-graduate"></i>Sinh Viên</a>
-            <div class="dropdown-menu bg-transparent border-0">
-              <a href="add-student.html" class="dropdown-item">
-                <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Sinh Viên
-              </a>
-              <a href="list-student.html" class="dropdown-item">
-                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Sinh Viên
-              </a>
-            </div>
-          </div>
-          <div class="nav-item dropdown  ">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                <i class="fa-solid fa-person"></i>Giảng Viên</a>
-            <div class="dropdown-menu bg-transparent border-0">
-                <a href="add-teacher.html" class="dropdown-item">
-                    <i class="fa-solid fa-circle-plus"></i>
-                    &nbsp;Thêm Giảng Viên</a>
-                <a href="list-teacher.html" class="dropdown-item">
-                    <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Giảng Viên
+            <nav class="navbar bg-light navbar-light">
+                <a href="index.html" class="navbar-brand mx-3 mb-3">
+                    <h3 class="text-primary navbar-brand-name">Quản Lý Sinh Viên</h3>
                 </a>
-                <a href="#" class="dropdown-item">
-                    <i class="fa-solid fa-calendar-days"></i>&nbsp;Lập Lịch Dạy</a>
-            </div>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/male.png" alt="" style="width: 40px; height: 40px" />
+                        <div
+                            class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Văn Hoàng Phúc</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link active">
+                        <i class="fa fa-tachometer-alt me-2"></i>Trang
+                        Chủ</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user-graduate"></i></i>Sinh Viên</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="add-student.html" class="dropdown-item">
+                                <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Sinh Viên
+                            </a>
+                            <a href="list-student.html" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Sinh Viên
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-person"></i>Giảng Viên</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="add-teacher.html" class="dropdown-item">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                &nbsp;Thêm Giảng Viên</a>
+                            <a href="list-teacher.html" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Giảng Viên
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-calendar-days"></i>&nbsp;Lập Lịch Dạy</a>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                          <i class="fas fa-star"></i>Điểm</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                          <a href="add-grade.html" class="dropdown-item">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            &nbsp;Thêm Điểm</a>
+                          <a href="find-grade.html" class="dropdown-item">
+                            <i class="fa-solid fa-list"></i>&nbsp;Tra cứu điểm
+                          </a>
+                        </div>
+                      </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-laptop me-2"></i>Khoa</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                &nbsp;Thêm Khoa</a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Khoa</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-person-shelter"></i>Lớp Học
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Lớp</a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Lớp Học</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-book-open"></i>Môn Học
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="add-subject.html" class="dropdown-item">
+                                <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Môn Học</a>
+                            <a href="list-subject.html" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Môn Học</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-hashtag"></i>Chức năng khác
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="check-in.html" class="dropdown-item">
+                                <i class="fa-solid fa-user-check"></i>&nbsp;Điểm danh</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-          <div class="nav-item dropdown  ">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-              <i class="fas fa-star"></i>Điểm</a>
-            <div class="dropdown-menu bg-transparent border-0">
-              <a href="add-grade.html" class="dropdown-item">
-                <i class="fa-solid fa-circle-plus"></i>
-                &nbsp;Thêm Điểm</a>
-              <a href="find-grade.html" class="dropdown-item">
-                <i class="fa-solid fa-list"></i>&nbsp;Tra cứu điểm
-              </a>
-            </div>
-          </div>
-          <div class="nav-item dropdown  ">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                class="fa fa-laptop me-2"></i>Khoa</a>
-            <div class="dropdown-menu bg-transparent border-0">
-              <a href="#" class="dropdown-item">
-                <i class="fa-solid fa-circle-plus"></i>
-                &nbsp;Thêm Khoa</a>
-              <a href="#" class="dropdown-item">
-                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Khoa</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown  ">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-              <i class="fa-solid fa-person-shelter"></i>Lớp Học
-            </a>
-            <div class="dropdown-menu bg-transparent border-0">
-              <a href="#" class="dropdown-item">
-                <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Lớp</a>
-              <a href="#" class="dropdown-item">
-                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Lớp Học</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
     <!-- Sidebar End -->
 
     <!-- Content Start -->

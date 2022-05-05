@@ -39,7 +39,7 @@
         <!-- Spinner End -->
 
         <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
+        <<div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="index.html" class="navbar-brand mx-3 mb-3">
                     <h3 class="text-primary navbar-brand-name">Quản Lý Sinh Viên</h3>
@@ -57,11 +57,11 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Trang
+                    <a href="index.html" class="nav-item nav-link">
+                        <i class="fa fa-tachometer-alt me-2"></i>Trang
                         Chủ</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa-solid fa-person"></i>Sinh Viên</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user-graduate"></i></i>Sinh Viên</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="add-student.html" class="dropdown-item">
                                 <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Sinh Viên
@@ -85,18 +85,19 @@
                                 <i class="fa-solid fa-calendar-days"></i>&nbsp;Lập Lịch Dạy</a>
                         </div>
                     </div>
+                    
                     <div class="nav-item dropdown  ">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
-                            <i class="fas fa-star"></i>Điểm</a>
-                        <div class="dropdown-menu bg-transparent border-0 ">
-                            <a href="add-grade.html" class="dropdown-item active">
-                                <i class="fa-solid fa-circle-plus"></i>
-                                &nbsp;Thêm Điểm</a>
-                            <a href="find-grade.html" class="dropdown-item">
-                                <i class="fa-solid fa-list"></i>&nbsp;Tra cứu điểm
-                            </a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                          <i class="fas fa-star"></i>Điểm</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                          <a href="add-grade.html" class="dropdown-item">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            &nbsp;Thêm Điểm</a>
+                          <a href="find-grade.html" class="dropdown-item">
+                            <i class="fa-solid fa-list"></i>&nbsp;Tra cứu điểm
+                          </a>
                         </div>
-                    </div>
+                      </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-laptop me-2"></i>Khoa</a>
@@ -108,7 +109,7 @@
                                 <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Khoa</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
+                    <div class="nav-item dropdown  ">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa-solid fa-person-shelter"></i>Lớp Học
                         </a>
@@ -117,6 +118,26 @@
                                 <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Lớp</a>
                             <a href="#" class="dropdown-item">
                                 <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Lớp Học</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-book-open"></i>Môn Học
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="add-subject.html" class="dropdown-item active">
+                                <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Môn Học</a>
+                            <a href="list-subject.html" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Môn Học</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-hashtag"></i>Chức năng khác
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="check-in.html" class="dropdown-item">
+                                <i class="fa-solid fa-user-check"></i>&nbsp;Điểm danh</a>
                         </div>
                     </div>
                 </div>
@@ -162,56 +183,60 @@
             </div>
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
-                    <form action="" method="post" id="form">
-                        <div class="row g-4">
-                            <div class="col-sm-3">
-                                <div class="form-group mb-3">
-                                    <label for="school_year_id" class="form-label">Năm học</label>
-                                    <select class="form-select" id="bank">
-                                        <option value="0">Chọn</option>
-                                        <option value="2019_2020">2019 - 2020</option>
-                                        <option value="2020_2021">2020 - 2021</option>
-                                        <option value="2021_2022">2021 - 2022</option>
-                                    </select>
+                    <form action="/abc" method="post" id="form">
+                        <form></form>
+                        <form action="/def" method="get" id="get-data">
+                            <div class="row g-4">
+                                <div class="col-sm-3">
+                                    <div class="form-group mb-3">
+                                        <label for="school_year_id" class="form-label">Năm học</label>
+                                        <select class="form-select" id="bank">
+                                            <option value="0">Chọn</option>
+                                            <option value="2019_2020">2019 - 2020</option>
+                                            <option value="2020_2021">2020 - 2021</option>
+                                            <option value="2021_2022">2021 - 2022</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group mb-3">
+                                        <label for="semester" class="form-label">Kỳ học</label>
+                                        <select class="form-select" id="semester">
+                                            <option value="0">Chọn</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group mb-3">
+                                        <label for="course" class="form-label">Học phần</label>
+                                        <select class="form-select" id="course">
+                                            <option value="0">Chọn</option>
+                                            <option value="ATCTHT3">Lập trình căn bản</option>
+                                            <option value="ATCBLH1">Vật lý đại cương A1</option>
+                                            <option value="ATCTHT1">Tin học đại cương</option>
+                                            <option value="CTCBTT7">Phương pháp tính</option>
+                                            <option value="ATCBNN1">Tiếng Anh 1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group mb-3">
+                                        <label for="class" class="form-label">Lớp </label>
+                                        <select class="form-select" id="course">
+                                            <option value="0">Chọn</option>
+                                            <option value="L01">L01</option>
+                                            <option value="L02">L02</option>
+                                            <option value="L03">L03</option>
+                                            <option value="L04">L04</option>
+                                            <option value="L05">L05</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="form-group mb-3">
-                                    <label for="semester" class="form-label">Kỳ học</label>
-                                    <select class="form-select" id="semester">
-                                        <option value="0">Chọn</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group mb-3">
-                                    <label for="course" class="form-label">Học phần</label>
-                                    <select class="form-select" id="course">
-                                        <option value="0">Chọn</option>
-                                        <option value="ATCTHT3">Lập trình căn bản</option>
-                                        <option value="ATCBLH1">Vật lý đại cương A1</option>
-                                        <option value="ATCTHT1">Tin học đại cương</option>
-                                        <option value="CTCBTT7">Phương pháp tính</option>
-                                        <option value="ATCBNN1">Tiếng Anh 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group mb-3">
-                                    <label for="class" class="form-label">Lớp </label>
-                                    <select class="form-select" id="course">
-                                        <option value="0">Chọn</option>
-                                        <option value="L01">L01</option>
-                                        <option value="L02">L02</option>
-                                        <option value="L03">L03</option>
-                                        <option value="L04">L04</option>
-                                        <option value="L05">L05</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
+                        <button type="submit" form="get-data" class="btn btn-primary">Lấy danh sách học viên</button>
                         <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
                             <table class="table table-bordered text-center">
                                 <thead>
@@ -244,14 +269,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -261,14 +286,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -278,14 +303,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -295,14 +320,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -312,14 +337,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -329,14 +354,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -346,14 +371,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -363,14 +388,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -380,14 +405,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -397,14 +422,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -414,14 +439,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -431,14 +456,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -448,14 +473,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -465,14 +490,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -482,14 +507,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -499,14 +524,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -516,14 +541,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -533,14 +558,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -550,14 +575,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -567,14 +592,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -584,14 +609,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -601,14 +626,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">1</th>
@@ -618,14 +643,14 @@
                                         <td>AT16E</td>
                                         <td>
                                             <input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/>
+                                                autocomplete="off" min="0" max="10" />
                                         </td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                         <td><input type="number" class="form-control" id="grade1" name="grade1"
-                                                autocomplete="off" min="0" max="10"/></td>
+                                                autocomplete="off" min="0" max="10" /></td>
                                     </tr>
                                 </tbody>
 
