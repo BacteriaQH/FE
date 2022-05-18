@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Quản Lý Sinh Viên Mật Mã</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    
-        <!-- Favicon -->
-        <link href="img/logoico.png" rel="icon" />
-    
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-    
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/f172ccfa7a.js" crossorigin="anonymous"></script>
-    
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-    
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet" />
-    </head>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Quản Lý Sinh Viên Mật Mã</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="img/logoico.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f172ccfa7a.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+
 <body>
     <div class="container-fluid position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
@@ -58,44 +60,45 @@
                     <a href="index.html" class="nav-item nav-link">
                         <i class="fa fa-tachometer-alt me-2"></i>Trang
                         Chủ</a>
-                    <div class="nav-item dropdown  ">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user-graduate"></i></i>Sinh Viên</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i
+                                class="fa-solid fa-user-graduate"></i></i>Sinh Viên</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="add-student.html" class="dropdown-item ">
+                            <a href="add-student.html" class="dropdown-item">
                                 <i class="fa-solid fa-circle-plus"></i>&nbsp;Thêm Sinh Viên
                             </a>
-                            <a href="list-student.html" class="dropdown-item">
+                            <a href="list-student.html" class="dropdown-item active">
                                 <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Sinh Viên
                             </a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
+                    <div class="nav-item dropdown  ">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa-solid fa-person"></i>Giảng Viên</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="add-teacher.html" class="dropdown-item">
                                 <i class="fa-solid fa-circle-plus"></i>
                                 &nbsp;Thêm Giảng Viên</a>
-                            <a href="list-teacher.html" class="dropdown-item active" >
+                            <a href="list-teacher.html" class="dropdown-item">
                                 <i class="fa-solid fa-list"></i>&nbsp;Danh Sách Giảng Viên
                             </a>
                             <a href="#" class="dropdown-item">
                                 <i class="fa-solid fa-calendar-days"></i>&nbsp;Lập Lịch Dạy</a>
                         </div>
                     </div>
-                    
+
                     <div class="nav-item dropdown  ">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                          <i class="fas fa-star"></i>Điểm</a>
+                            <i class="fas fa-star"></i>Điểm</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                          <a href="add-grade.html" class="dropdown-item">
-                            <i class="fa-solid fa-circle-plus"></i>
-                            &nbsp;Thêm Điểm</a>
-                          <a href="find-grade.html" class="dropdown-item">
-                            <i class="fa-solid fa-list"></i>&nbsp;Tra cứu điểm
-                          </a>
+                            <a href="add-grade.html" class="dropdown-item">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                &nbsp;Thêm Điểm</a>
+                            <a href="find-grade.html" class="dropdown-item">
+                                <i class="fa-solid fa-list"></i>&nbsp;Tra cứu điểm
+                            </a>
                         </div>
-                      </div>
+                    </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-laptop me-2"></i>Khoa</a>
@@ -175,34 +178,32 @@
             <!-- Section Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded h-50 p-4">
-                        <div class="row g-4">
-                            <h3>Danh Sách Giảng Viên</h3>
-                        </div>
+                    <div class="row g-4">
+                        <h3>Danh Sách Sinh Viên</h3>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid pt-4 px-4" >
-                <div class="bg-light rounded p-4" >
-                    <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar" >
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded p-4">
+                    <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
                         <table class="table table-hover table-striped mb-0">
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Họ và Tên</th>
-                                    <th scope="col">Mã Giảng Viên</th>
-                                    <th scope="col">Khoa</th>
-                                    <th scope="col">Email</th>
+                                    <th scope="col">Mã Sinh Viên</th>
+                                    <th scope="col">Lớp</th>
                                     <th scope="col">&nbsp;</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -213,12 +214,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -229,12 +229,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -245,12 +244,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -261,12 +259,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -277,12 +274,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -293,12 +289,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -309,12 +304,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -325,12 +319,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -341,12 +334,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -357,12 +349,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -373,12 +364,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -389,12 +379,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -405,12 +394,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -421,12 +409,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -437,12 +424,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -453,12 +439,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -469,12 +454,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -485,12 +469,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -501,12 +484,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -517,12 +499,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -533,12 +514,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -549,12 +529,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -565,12 +544,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -581,12 +559,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -597,12 +574,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -613,12 +589,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Đức Thuận</td>
-                                    <td>GV_1</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td><a href="mailto:leducthuan255@gmail.com">leducthuan255@gmail.com</a></td>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="edit-teacher.html">
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a href="#" class="btn btn-danger btn-sm"
@@ -627,7 +602,36 @@
                                         </a>
                                     </td>
                                 </tr>
-                                
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm"
+                                            onclick="removeRow(2,  ' /admin/products/destroy')">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Văn Hoàng Phúc</td>
+                                    <td>AT160541</td>
+                                    <td>AT16E</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-sm" href="edit-student.html">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm"
+                                            onclick="removeRow(2,  ' /admin/products/destroy')">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -635,8 +639,8 @@
             </div>
             <!-- Section End -->
 
-             <!-- Footer Start -->
-             <div class="container-fluid pt-4 px-4">
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-lg-4 text-center">
@@ -666,7 +670,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
